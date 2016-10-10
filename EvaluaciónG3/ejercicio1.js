@@ -74,7 +74,7 @@ if (jugador1 == "piedra") {
 		marcador1 += 1;
 		alert ("Gana " + nombre);
 		
-	} else {
+	} else if (jugador2 == "piedra") {
 		alert("Empate, no hay puntos");
 	}
 } else if (jugador1 == "papel") {
@@ -86,7 +86,7 @@ if (jugador1 == "piedra") {
 		marcador2 += 1;
 		alert ("Gana " + nombre2);
 		
-	} else {
+	} else if (jugador2 == "papel") {
 		alert("Empate, no hay puntos");
 	}
 } else if (jugador1 == "tijera") {
@@ -98,9 +98,13 @@ if (jugador1 == "piedra") {
 		marcador2 += 1;
 		alert ("Gana " + nombre2);
 		
-	} else {
+	} else if (jugador2 == "tijera") {
 		alert("Empate, no hay puntos");
+	} else {
+		alert("Escribe solo piedra ó papel ó tijera");
 	}
+} else {
+	alert("Escribe solo piedra ó papel ó tijera");
 }
 }; //termina ciclo
 (marcador2 === marcador1) ? alert("¡Está reñido!, hay un empate") : (marcador2 < marcador1) ? alert("Gana indiscutiblemente " + nombre1 + " con " + marcador1 + " contra " + marcador2 + " puntos del looser") : alert("Gana indiscutiblemente " + nombre2 + " con " + marcador2 + " contra " + marcador1 + " puntos del looser");
